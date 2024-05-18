@@ -1,0 +1,19 @@
+{% extends 'home/index.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="mycontainer container">
+        {% for entery in enterys %}
+            <div class="mycard card mb-4">
+                {% if entery.image %}
+                <img src="{{entery.image.url}}" class="p-3 my_image" alt="...">
+                {% endif %}
+                <div class="card-body text-white">
+                    <h3 class="card-title">{{entery.headline}}</h3>
+                    <p class="card-text">{{entery.description}}</p>
+                    <p class="card-text"><small class="text-body-secondary">{{entery.date}}</small></p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock content %}

@@ -1,0 +1,44 @@
+.mynav {
+    background-image: linear-gradient(to right, darkred, red, darkred);
+
+    margin: 14px;
+    border-radius: 20px;
+}
+
+.mynav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.mynav ul li {
+    list-style: none;
+    list-style-type: none;
+    margin: 2%;
+    text-align: center;
+}
+
+.mynav ul li a {
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 200%;
+}
+
+@media (max-width: 992px) {
+    .mynav ul li a {
+        font-size: 130%;
+    }
+}
+
+@media (max-width: 500px) {
+    .mynav ul li a {
+        font-size: 120%;
+    }
+
+    .mynav ul li {
+        padding: 2%;
+        margin: 3%;
+    }
+}

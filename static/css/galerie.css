@@ -1,0 +1,10 @@
+@media (max-width: 1000px) {
+    .col-custom-lg-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+.myimage {
+    max-width: 800px;
+}

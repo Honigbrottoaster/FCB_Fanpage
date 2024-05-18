@@ -1,0 +1,11 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/nav.css' %}">
+
+<nav class="mynav">
+    <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'galerie' %}">Galerie</a></li>
+        <li id="last-link"><a href="{% url 'review' %}">Rückblick</a></li>
+    </ul>
+</nav>

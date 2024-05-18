@@ -1,0 +1,18 @@
+{% extends "home/index.html" %}
+
+{% block content %}
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            {% for image in images %}
+                <div class="col-md-4 col-sm-6 col-12 mb-4">
+                    <div class="card shadow bg-secondary position-relative">
+                        <img src="{{ image.image.url }}" class="card-img-top" alt="...">
+                        <a href="{{ image.image.url }}" download class="position-absolute rounded-5" style="bottom: 10px; right: 10px; background-color: black;">
+                            <button class="btn"><i style="color: white;" class="fa fa-download"></i></button>
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock content %}
