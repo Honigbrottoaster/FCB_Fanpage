@@ -131,4 +131,4 @@ MEDIA_URL = "/img/"
 
 MEDIA_ROOT = BASE_DIR / "static/img/"
 
-ALLOWED_HOSTS = ['192.168.178.40', '192.168.178.40:8050']
+ALLOWED_HOSTS = ['*']
