@@ -1,5 +1,19 @@
 {% extends "home/index.html" %}
+{% load static %}
 
 {% block content %}
-    <h2>HOME</h2>
+    <div class="home container">
+        <div class="myheader">
+            <h1>FC Bayern Fanclub Amorbach</h1>
+            <p>Hier kann auch nur ein Untertitel sein lol</p>
+        </div>
+        
+        <div class="mymain">
+            <div class="content">
+                <h1>FCB Fanclub Amorbach seit 3939. e.V.</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, aliquam suscipit! Ipsum rem sed libero. Mollitia adipisci recusandae accusantium ad!</p>
+            </div>
+            <img id="myimage" src="{% static 'img/Screenshot_2024-01-07_133519.png' %}">
+        </div>
+    </div>
 {% endblock content %}

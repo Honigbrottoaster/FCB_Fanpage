@@ -1,0 +1,96 @@
+.home {
+    margin-top: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /*
+    background-image: url("/static/css/img/bgHome.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    */
+
+    border: none;
+    border-radius: 20px;
+}
+
+.myheader {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: white;
+    background-image: linear-gradient(to right, darkred, red, darkred);
+    padding: 10px;
+    margin: 15px;
+
+    border: none;
+    border-radius: 20px;
+
+    width: 100%;
+}
+
+.myheader h1 {
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+/* ---main--- */
+.mymain {
+    display: flex;
+    justify-content: space-around;   
+    align-content: center;
+    justify-content: center;
+    
+    background-image: linear-gradient(to right, darkred, red, darkred);
+
+    padding: 10px;
+    margin: 15px;
+
+    border: none;
+    border-radius: 20px;
+
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    margin-bottom: 0;
+    padding: 25px;
+    padding-bottom: 10px;
+
+    color: white;
+}
+
+.content h1 {
+    padding: 10px;
+}
+
+#myimage {
+    padding: 10px;
+    padding-top: 0px;
+    max-width: 600px;
+
+    border: none;
+    border-radius: 25px;
+}
+
+@media (max-width: 991px) {
+    .mymain {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #myimage {
+        width: 100%;
+    }
+}
